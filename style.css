@@ -52,7 +52,7 @@ input {
 }
 
 .glitch {
-  animation: glitch 1s linear infinite;
+  animation: glitch 0.5s linear infinite;
   position: absolute;
   top: 0;
   left: 0;
@@ -62,31 +62,32 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 9999;
 }
 
 @keyframes glitch {
   0% {
-    transform: translateX(-2px);
+    transform: translateX(-10px) rotate(0deg);
     text-shadow: 1px 0 red, -1px 0 red;
   }
   20% {
-    transform: translateX(2px);
+    transform: translateX(10px) rotate(5deg);
     text-shadow: -1px 0 red, 1px 0 red;
   }
   40% {
-    transform: translateX(-2px);
+    transform: translateX(-15px) rotate(-5deg);
     text-shadow: 1px 0 red, -1px 0 red;
   }
   60% {
-    transform: translateX(2px);
+    transform: translateX(15px) rotate(10deg);
     text-shadow: -1px 0 red, 1px 0 red;
   }
   80% {
-    transform: translateX(-2px);
+    transform: translateX(-10px) rotate(-10deg);
     text-shadow: 1px 0 red, -1px 0 red;
   }
   100% {
-    transform: translateX(2px);
+    transform: translateX(10px) rotate(15deg);
     text-shadow: -1px 0 red, 1px 0 red;
   }
 }
