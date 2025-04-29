@@ -13,10 +13,12 @@ function checkAnswer() {
     // Affiche le lien si la réponse est correcte
     document.getElementById('message').style.display = 'block';
   } else {
-    // Affiche un effet glitch et recharge la page si la réponse est incorrecte
-    document.getElementById('glitch').style.display = 'block';
+    // Applique un effet glitch sur toute la page
+    document.body.classList.add('glitch');
+
+    // Recharge la page après 2 secondes pour laisser le temps à l'animation glitch de se produire
     setTimeout(() => {
       window.location.reload();
-    }, 2000); // Recharge la page après 2 secondes de glitch
+    }, 2000); // Attente de 2 secondes avant de recharger la page
   }
 }
