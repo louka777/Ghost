@@ -1,0 +1,56 @@
+body {
+  background-color: black;
+  font-family: Arial, sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 3em;
+  color: red;
+  text-shadow: 0 0 10px red, 0 0 20px red;
+}
+
+button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: darkred;
+}
+
+input {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: none;
+}
+
+#riddle {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#message, #glitch {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.5em;
+}
+
+#glitch {
+  color: red;
+  font-weight: bold;
+  display: none;
+}
